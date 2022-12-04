@@ -189,7 +189,7 @@ void imprimir_arv(ALU *raiz){
         printf("Matricula: %d \n", raiz->matricula);
         printf("Nome: %s \n", raiz->nome);
         printf("Email: %s \n", raiz->email);
-        printf("Telefone :%ld \n\n", raiz->telefone);
+        printf("Telefone :%ld \n\n",raiz->telefone);
         imprimir_arv(raiz->esq);
         imprimir_arv(raiz->dir);
     }
@@ -201,7 +201,14 @@ int main() {
     add(555555, "pedro", "mfmd@gmail.com", 998877664); 
     add(444444, "joao", "fefe@gmail.com", 344343434);
     add(333333, "caio", "caicai@gmail.com", 355554534);
-    modificar(raiz, 333333);
+    add(324388, "felipe", "feh@gmail.com", 235346677); 
+    add(945645, "maria", "mari@gmail.com", 235546586);
+    add(232889, "guilherme", "gui@gmail.com", 124854845);
+    add(221318, "jessica", "jess@gmail.com", 98663135); 
+    add(134355, "ana", "ana@gmail.com", 243558831);
+    add(213854, "julia", "juh@gmail.com", 123155996);   
+    add(153254, "pedro", "pedro@gmail.com", 523689234);    
+    modificar(raiz, 555555);
     remover(raiz, 444444);
     imprimir_arv(raiz);
     buscar_alu(333333);
